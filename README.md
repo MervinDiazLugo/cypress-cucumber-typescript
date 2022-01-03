@@ -122,4 +122,4 @@ For contributors who want to improve this repo by contributing some code, report
 
 ## Contributors
 for now just me:
-[Kervin Diaz Lugo <mervindiazlugo@gmail.com>](https://github.com/MervinDiazLugo)
+[Mervin Diaz Lugo <mervindiazlugo@gmail.com>](https://github.com/MervinDiazLugo)
