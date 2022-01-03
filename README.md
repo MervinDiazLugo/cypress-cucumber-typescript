@@ -15,6 +15,7 @@
 * Page Object design pattern implementation. (in progress)
 * Extensive hooks implemented for BeforeFeature, AfterScenarios etc. (pending)
 * Screenshots on failure feature scenarios. (pending)
+* environment handler (pending)
 
 
 ### To Get Started
@@ -55,14 +56,12 @@ npm run clean-reports
 
 #### Writing Features
 ```
-Feature: To search typescript in google
-@TypeScriptScenario
+Feature: Passing with TypeScript
 
-  Scenario: Typescript Google Search
-    Given I am on google page
-    When I type "Typescript"
-    Then I click on search button
-    Then I clear the search text
+@TypeScriptScenario
+  Scenario: Hello again
+  Given I pass
+  And I verify
 ```
 #### Writing Step Definitions
     
