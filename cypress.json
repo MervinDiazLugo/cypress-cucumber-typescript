@@ -1,0 +1,18 @@
+{
+    "ignoreTestFiles":"*.ts",
+    "testFiles": "**/*.feature",
+    "reporter":"mochawesome",
+    "video": false,
+    "reporterOptions":{
+      "overwrite":"true",
+      "reportPageTitle":"Automated Test Status",
+      "reportTitle":"Automated Test Reporting Dashboard",
+      "showPassed":"true",
+      "autoOpen":"false",
+      "charts":"true",
+      "code":"true",
+      "reportDir":"cypress/reports/MochAwesome",
+      "reportFilename":"MochAwesome Report",
+      "timestamp": "–ts"
+    }
+}

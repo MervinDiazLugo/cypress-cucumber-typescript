@@ -1,0 +1,13 @@
+{
+    "cucumberautocomplete.steps": [
+        "cypress/integration/step_definitions/*.ts"
+    ],
+    "cucumberautocomplete.syncfeatures": "cypress/integration/features/*feature", 
+    "cucumberautocomplete.strictGherkinCompletion": true, 
+
+    "cucumber-quick": {
+        "tool": "cypress",
+        "script": "cypress run --spec cypress/integration/features/**/*.feature"
+        //"cypress run --spec 'cypress/integration/features/**/*.feature'"
+    }
+  }
