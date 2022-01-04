@@ -6,8 +6,5 @@ module.exports = (on) => {
     ...browserify.defaultOptions,
     typescript: require.resolve("typescript"),
   };
-
   on("file:preprocessor", cucumber(options));
-
-  
 };

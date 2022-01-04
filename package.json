@@ -1,4 +1,5 @@
-{ "name": "cypress-cucumber-typescriptr",
+{
+  "name": "cypress-cucumber-typescriptr",
   "version": "0.0.1",
   "description": "This project demonstrates the basic cypress-cucumber-typescript framework project setup.",
   "keywords": [

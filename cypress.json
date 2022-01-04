@@ -14,5 +14,19 @@
       "reportDir":"cypress/reports/MochAwesome",
       "reportFilename":"MochAwesome Report",
       "timestamp": "–ts"
+    },
+
+    "currentEnvironment": "dev",
+
+    "env":
+    {
+      "test":
+        {
+          "baseUrl" : "https://www.google.com.ar"
+        },
+      "dev":
+        {
+          "baseUrl" : "https://www.google.com"
+        }
     }
 }
