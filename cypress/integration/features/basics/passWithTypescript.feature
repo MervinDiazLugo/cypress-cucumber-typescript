@@ -1,10 +1,11 @@
-Feature: Passing with TypeScript
+Feature: Passing cucumber test with TypeScript
   
-  Scenario: Hello again
-  Given I pass
-  And I verify
+  Scenario: Verify google input box
+  Given I'am in main site app
+  And I verify if input box is visible
+  Then I do some operations
+
 
 
   Scenario: Hello again2
-  Given I pass
-  And I verify
+  Given I'am in main site app

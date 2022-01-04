@@ -5,13 +5,16 @@ import { config } from "../../config/config";
 
 const localFunctionWithTypes = (a: number, b: number): number => a + b;
 
-Given(/^I pass$/, () => {
-  pass("hello world");
-  console.log(localFunctionWithTypes(1,2) === 2)
+
+Given(/^I'am in main site app$/, () => {
   cy.visit(config.environment["baseUrl"]).debug();
+});
+
+And(/^I verify if input box is visible$/, () => {
   google_homepage.googleSearchBoxDisplayed()
 });
 
-And(/^I verify$/, () => {
-  google_homepage.googleSearchBoxDisplayed()
+And(/^I do some operations$/, () => {
+  pass("hello world");
+  console.log(localFunctionWithTypes(1,2) === 2)
 });
