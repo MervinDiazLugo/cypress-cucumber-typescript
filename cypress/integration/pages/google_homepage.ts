@@ -6,6 +6,11 @@ export class google_homepage{
 
     public static googleSearchBoxDisplayed(){
        cy.get(gpe.search_box).should('be.visible')
-
     }
+
+    public static googleSetSearchBox(text){
+        cy.get(gpe.search_box)
+        .type(text)
+        .should('have.value', text)
+     }
 }

@@ -5,7 +5,7 @@ Feature: Passing cucumber test with TypeScript
   And I verify if input box is visible
   Then I do some operations
 
-
-
-  Scenario: Hello again2
+  Scenario: Searchbox google 
   Given I'am in main site app
+  And I Set 'Hola Mundo!' on google searchbox
+       

@@ -1,13 +1,15 @@
 {
     "cucumberautocomplete.steps": [
-        "cypress/integration/step_definitions/*.ts"
+        "./cypress/integration/step_definitions/*.ts"
     ],
-    "cucumberautocomplete.syncfeatures": "cypress/integration/features/*feature", 
-    "cucumberautocomplete.strictGherkinCompletion": true, 
-
+    "cucumberautocomplete.syncfeatures": "./cypress/integration/features/*feature",
+    "cucumberautocomplete.strictGherkinCompletion": false,
+    "editor.quickSuggestions": {
+        "strings": true,
+    },
     "cucumber-quick": {
         "tool": "cypress",
-        "script": "cypress run --spec cypress/integration/features/**/*.feature"
+        "script": "cypress run  --spec 'cypress/integration/features/**/*.feature' --browser chrome"
         //"cypress run --spec 'cypress/integration/features/**/*.feature'"
     }
   }
