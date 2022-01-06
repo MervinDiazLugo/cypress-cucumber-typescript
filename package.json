@@ -17,6 +17,7 @@
     "build": "rimraf typescript && tsc",
     "rebuild": "npm rebuild",
     "test": "cypress run --browser chrome",
+    "test-tags": "./node_modules/.bin/cypress-tags run -e TAGS='not @ignore' --browser chrome",
     "test-mocha": "cypress run --reporter mochawesome",
     "test-gui": "cypress open --browser chrome",
     "init-contributors": "all-contributors init",

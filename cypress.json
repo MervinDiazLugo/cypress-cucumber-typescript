@@ -3,6 +3,10 @@
     "testFiles": "**/*.feature",
     "reporter":"mochawesome",
     "video": false,
+    "fixtures":{
+      "example":"/example.json",
+      "exampleFeature":"/exampleFeature.json"
+    },
     "reporterOptions":{
       "overwrite":"true",
       "reportPageTitle":"Automated Test Status",
@@ -16,8 +20,6 @@
       "timestamp": "–ts"
     },
     
-    "TAGS": "not @ignore",
-
     "currentEnvironment": "dev",
 
     "env":

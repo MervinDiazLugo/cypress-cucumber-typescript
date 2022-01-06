@@ -7,10 +7,4 @@ export class google_page_elements{
 
     constructor() {
     }
-
-    public print(){
-        console.log(google_page_elements.google_logo)
-        console.log(google_page_elements.search_box)
-        console.log(google_page_elements.gmail_link)
-    }
 }

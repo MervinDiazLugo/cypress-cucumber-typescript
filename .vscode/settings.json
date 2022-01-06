@@ -1,5 +1,6 @@
 {
-    "cucumberautocomplete.steps": [
+    "cucumberautocomplete.steps": 
+    [
         "./cypress/integration/step_definitions/*.ts"
     ],
     "cucumberautocomplete.syncfeatures": "./cypress/integration/features/*feature",

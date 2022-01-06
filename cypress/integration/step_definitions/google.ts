@@ -1,7 +1,9 @@
-import { And, Given } from "cypress-cucumber-preprocessor/steps";
-import { pass } from "./someFile";
+import { And, Given, Then, When  } from "cypress-cucumber-preprocessor/steps";
 import { google_homepage } from "../pages/google_homepage"; 
-import { config } from "../../config/config";
+import { config } from "../../../config";
+import { commonFunctions, keyValue } from "../../common/commonFunctions";
+import { google_page_elements as gpe } from "../page_objects/google_page_elements";
+const CommonFunctions: commonFunctions = new commonFunctions();
 
 const localFunctionWithTypes = (a: number, b: number): number => a + b;
 
@@ -22,7 +24,7 @@ afterEach(() => {
 });
 
 Given(/^I'am in main site app$/, () => {
-  cy.visit(config.environment["baseUrl"]).debug();
+  cy.visit(config.getEnvironment["baseUrl"]).debug();
 });
 
 And(/^I verify if input box is visible$/, () => {
@@ -30,10 +32,13 @@ And(/^I verify if input box is visible$/, () => {
 });
 
 And(/^I do some operations$/, () => {
-  pass("hello world");
   console.log(localFunctionWithTypes(1,2) === 2)
 });
 
-And(/^I Set '(.*?)' on google searchbox$/, async (text)=> {
+And(/^I Set '(.*?)' on google searchbox$/, (text)=> {
   google_homepage.googleSetSearchBox(text)
+});
+
+And(/^I use '(.*?)' fixture and put '(.*?)' on google searchbox$/, (fixture, value)=> {
+  google_homepage.fixtureNameSetSearchBox(fixture, value)
 });
